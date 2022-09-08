@@ -17,7 +17,8 @@ if (errors.isEmpty()){
             const user = await UserModel.create({
                 name,
                 email,
-                password: hashed
+                password: hashed,
+                admin: true
                 
             });
 
